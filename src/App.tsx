@@ -1,26 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {Header} from "./layout/header/Header";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header/>
     </div>
   );
 }
 
 export default App;
+
+
+//1) на странице если есть кнопка и когда по ней проходит клик и переход на другую страницу (в новом окне или в этом окне), то это будет ссылка стилищованная под кнопку? А если это кнопка открывающая какую либо форму, то это кнопка? А если использовать якорные ссылки?
