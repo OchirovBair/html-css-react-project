@@ -1,5 +1,6 @@
 import { createGlobalStyle } from "styled-components";
-import mainBgImg from '../assets//images/main-bg-image.png'
+import bg from '../assets/images/background/bgImage.png'
+
 
 export const GlobalStyle = createGlobalStyle`
     @font-face {
@@ -38,8 +39,47 @@ export const GlobalStyle = createGlobalStyle`
         -moz-osx-font-smoothing: grayscale;
         font-weight: normal;
         font-style: normal;
-        background-image: url(${mainBgImg});
-        background-size: cover;
-        //height: 4800px;
+        position: relative;
+        background-color: #090F1D;
+    }
+
+
+     body::before {
+         content: ""; 
+         position: absolute; 
+         background-image: url(${bg});
+         background-size: cover; 
+         background-position: center;
+         background-repeat: no-repeat;
+         inset: 0;
+         z-index: -1; 
+         mix-blend-mode: color-burn;
+     }
+
+
+    ul {
+        list-style: none;
+    }
+
+    button, a {
+        cursor: pointer;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    p,
+    h3,
+    h2,
+    h1,
+    span {
+        color: white;
     }
 `
+
+
+// 1) пятнам задать чере before и спозиционировать оносительно секции и наложить color-burn
+// 2) поробовать надпись по кругу сделать через after и также спозиционировать
+// 3)

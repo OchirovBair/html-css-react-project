@@ -1,15 +1,22 @@
 import React from 'react';
 import styled from "styled-components";
+import {FlexWrapper} from "../FlewWrapper";
+import {Link} from "../Link";
 
-export const Menu = () => {
+type MenuPropsType = {
+    items: Array<string>
+}
+
+export const Menu = (props: MenuPropsType) => {
     return (
         <StyledMenu>
-            <ul>
-                <li><a href="">Marketplace</a></li>
-                <li><a href="">Artists</a></li>
-                <li><a href="">Community</a></li>
-                <li><a href="">Collections</a></li>
-            </ul>
+            <FlexWrapper>
+                <ul>
+                    {props.items.map((item, index) => {
+                        return <ListItem key={index}><Link href={'#'}>{item}</Link></ListItem>
+                    })}
+                </ul>
+            </FlexWrapper>
         </StyledMenu>
     );
 };
@@ -19,4 +26,8 @@ const StyledMenu = styled.nav`
         display: flex;
         gap: 20px;
     }
+`
+
+const ListItem = styled.li`
+
 `
