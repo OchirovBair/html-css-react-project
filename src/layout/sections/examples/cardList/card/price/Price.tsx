@@ -3,7 +3,7 @@ import {Icon} from "../../../../../../components/icon/Icon";
 import styled from "styled-components";
 
 type PricePropsType = {
-    price: string
+    price: number
 }
 
 export const Price = (props: PricePropsType) => {

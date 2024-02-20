@@ -2,7 +2,6 @@ import React from 'react';
 import {Icon} from "../../../../components/icon/Icon";
 import MainImg from "../../../../assets/images/mainSection/mainImg.png";
 import {FlexWrapper} from "../../../../components/FlewWrapper";
-import {Text} from "./text/Text";
 import {Button} from "../../../../components/Button";
 import styled from "styled-components";
 
@@ -13,7 +12,7 @@ export const MainCard = (props: any) => {
                 <Icon iconId='mainSectionSvg' width='171.594971' height='171.501465'
                       viewBox='0 0 171.501465 171.501465'/>
             </StyledIconWrapper>
-            {/*<MainImage src={MainImg} alt="mainSection"/>*/}
+            <MainImage src={MainImg} alt="mainSection"/>
             <CardPlaceholder>
                 <FlexWrapper direction='column' gap='24px'>
                     <FlexWrapper justify='space-between'>
@@ -35,9 +34,12 @@ export const MainCard = (props: any) => {
 
 
 const MainImage = styled.img`
-    width: 468px;
-    position: absolute;
+    max-width: 468px;
+    width: 100%;
+    //position: absolute;
     left: 60px;
+    margin: 0 51px 93px 0;
+    //background-size: cover;
 `
 
 const CardPlaceholder = styled.div`
@@ -56,12 +58,12 @@ const CardPlaceholder = styled.div`
 
 const StyledMainImageArea = styled.div`
     position: relative;
-    width: 100%;
-    max-width: 468px;
-    aspect-ratio: 3/4;
-    background-image: url(${MainImg});
-    background-repeat: no-repeat;
-    background-size: cover;
+    // width: 100%;
+    // max-width: 468px;
+    // aspect-ratio: 3/4;
+    // background-image: url();
+    // background-repeat: no-repeat;
+    // background-size: cover;
 `
 
 const StyledIconWrapper = styled.div`

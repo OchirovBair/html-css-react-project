@@ -1,10 +1,9 @@
 import React from 'react';
 import {Menu} from "../../components/menu/Menu";
-import {Logo} from "./logo/Logo";
+import {Logo} from "../../components/Logo/Logo";
 import styled from "styled-components";
 import {FlexWrapper} from "../../components/FlewWrapper";
 import {Link} from "../../components/Link";
-import {Container} from "../../components/Container";
 
 const menuItems = ['Marketplace', 'Artists', 'Community', 'Collections'];
 export const Header = () => {
@@ -24,6 +23,6 @@ const StyledHeader = styled.header`
     max-width: 1320px;
     width: 100%;
     height: 100%;
-    outline: 2px solid green;
+    //outline: 2px solid green;
     margin: 0 auto;
 `

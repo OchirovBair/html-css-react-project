@@ -5,11 +5,17 @@ import {CardInformation} from "./cardInformation/CardInformation";
 import {Button} from "../../../../../components/Button";
 import {FlexWrapper} from "../../../../../components/FlewWrapper";
 
+type CardType = {
+    linkImg:string,
+    artTitle:string,
+    priceInEth:number,
+    endingTime:string
+}
 
-export const Card = (props: any) => {
+export const Card = (props: {data:CardType}) => {
     return (
         <StyledCard>
-                <img src={props.data.linkImg} alt="card picture"/>
+                <CardImg src={props.data.linkImg} alt="card"/>
                 <ExamplesFlexWrapper align='center' justify='space-between'>
                     <CardTitle>{props.data.artTitle}</CardTitle>
                     <Price price={props.data.priceInEth}/>
@@ -25,6 +31,7 @@ export const Card = (props: any) => {
 const StyledCard = styled.div`
     display: flex;
     flex-direction: column;
+    width: 100%;
 `
 const CardTitle = styled.h3`
 
@@ -32,4 +39,8 @@ const CardTitle = styled.h3`
 
 const ExamplesFlexWrapper = styled(FlexWrapper)`
     margin: 24px 0 16px;
+`
+
+const CardImg = styled.img`
+    width: 100%;
 `

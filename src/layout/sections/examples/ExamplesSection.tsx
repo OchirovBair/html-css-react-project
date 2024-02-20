@@ -11,8 +11,7 @@ export const ExamplesSection = () => {
             <Container>
                 <ExamplesGirdWrapper>
                     <div>
-                        <SectionTitle>Amazing and Super</SectionTitle>
-                        <SectionTitle>Unique Art of This Week</SectionTitle>
+                        <SectionTitle>Amazing and Super<br/>Unique Art of This Week</SectionTitle>
                     </div>
                     <Button width='134px' height='52px'>See All</Button>
                     <CardList/>
@@ -22,15 +21,15 @@ export const ExamplesSection = () => {
     );
 };
 
-const StyledExamples = styled.div`
-    height: 100%;
+const StyledExamples = styled.section`
+    
 `
 
 const ExamplesGirdWrapper = styled.div`
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
-    align-items: end;
+    align-items: center;
     row-gap: 64px;
 
     div:nth-child(2) {

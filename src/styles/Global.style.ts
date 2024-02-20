@@ -77,9 +77,10 @@ export const GlobalStyle = createGlobalStyle`
     span {
         color: white;
     }
+
+    section,
+    footer {
+        padding: 92px 0;
+    }
 `
 
-
-// 1) пятнам задать чере before и спозиционировать оносительно секции и наложить color-burn
-// 2) поробовать надпись по кругу сделать через after и также спозиционировать
-// 3)

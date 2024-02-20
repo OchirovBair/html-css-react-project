@@ -21,15 +21,18 @@ export const MainSection = () => {
 };
 
 const StyledMain = styled.section`
-    height: 100%;
+
 `
 
 
 const MainGridWrapper = styled.div`
     display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 171px;
+    //grid-template-columns: minmax(200px, 544px) minmax(200px, 515px);
+    grid-template-columns: auto auto;
+    //grid-template-rows: minmax(371px, 432px) minmax(87px, 92px);
+    grid-template-rows: auto auto;
+    grid-column-gap: 231px;
+    grid-row-gap: 72px;
 
     div:nth-child(2) {
         grid-area: 1/2/3/3;
