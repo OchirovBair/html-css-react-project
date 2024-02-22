@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/html-css-react-project/static/css/main.31d6cfe0.css",
-    "main.js": "/html-css-react-project/static/js/main.d412a176.js",
+    "main.css": "/html-css-react-project/static/css/main.d201b019.css",
+    "main.js": "/html-css-react-project/static/js/main.35c559a2.js",
     "static/js/592.d72b5737.chunk.js": "/html-css-react-project/static/js/592.d72b5737.chunk.js",
     "static/media/bgImage.png": "/html-css-react-project/static/media/bgImage.bff12f429e5d91957a16.png",
     "static/media/mainImg.png": "/html-css-react-project/static/media/mainImg.58c926bb93ee6dd12888.png",
@@ -13,13 +13,20 @@
     "static/media/img5.png": "/html-css-react-project/static/media/img5.41e76599eb4102c839e1.png",
     "static/media/cardImg1.png": "/html-css-react-project/static/media/cardImg1.2c1668faac144a48292f.png",
     "static/media/cardImg2.png": "/html-css-react-project/static/media/cardImg2.60f5dd67a42eeffeb7b1.png",
+    "static/media/Canela-Medium.eot": "/html-css-react-project/static/media/Canela-Medium.7576dbdc66f5a8c96c76.eot",
+    "static/media/Canela-Medium.ttf?": "/html-css-react-project/static/media/Canela-Medium.dfc1c97107f3bbf021a1.ttf",
+    "static/media/SourceSansPro-Bold.ttf?": "/html-css-react-project/static/media/SourceSansPro-Bold.8a1dab6b26e68026997d.ttf",
+    "static/media/SourceSansPro-Bold.eot?": "/html-css-react-project/static/media/SourceSansPro-Bold.77b7ff40494122c5c370.eot",
     "static/media/icons-sprite.svg": "/html-css-react-project/static/media/icons-sprite.e16a91d0c95501c551b080009678743f.svg",
+    "static/media/SourceSansPro-Bold.woff2?": "/html-css-react-project/static/media/SourceSansPro-Bold.76ece67d62d0fcd67975.woff2",
+    "static/media/Canela-Medium.woff2?": "/html-css-react-project/static/media/Canela-Medium.1d2bd7d3cbf461e66596.woff2",
     "index.html": "/html-css-react-project/index.html",
-    "main.d412a176.js.map": "/html-css-react-project/static/js/main.d412a176.js.map",
+    "main.d201b019.css.map": "/html-css-react-project/static/css/main.d201b019.css.map",
+    "main.35c559a2.js.map": "/html-css-react-project/static/js/main.35c559a2.js.map",
     "592.d72b5737.chunk.js.map": "/html-css-react-project/static/js/592.d72b5737.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.31d6cfe0.css",
-    "static/js/main.d412a176.js"
+    "static/css/main.d201b019.css",
+    "static/js/main.35c559a2.js"
   ]
 }
