@@ -7,7 +7,7 @@ import {Button} from "../../../../components/Button";
 export const MainInformation = () => {
     return (
         <StyledMainInformation>
-            <MainTitle>Discover and<br/>Collect The Best<br/>NFTs Digital Art</MainTitle>
+            <MainTitle>Discover and&#10;Collect The Best&#10;NFTs Digital Art</MainTitle>
             <Text>Get started with the easiest and most secure platform to buy and trade digital ART and NFT’s. Start exploring the world of digital art and NFTs today and take control of your digital assets with confidence!</Text>
             <Button>Explore Now</Button>
             <Link href={'#'}>Learn More</Link>
@@ -16,11 +16,15 @@ export const MainInformation = () => {
 };
 
 const StyledMainInformation = styled.div`
-    align-self: end;
+    //align-self: end;
 `
 
 const MainTitle = styled.h1`
-
+    font-family: 'Canela', sans-serif;
+    font-size: 64px;
+    letter-spacing: 0;
+    font-weight: 500; /* medium */
+    font-style: normal;
 `
 export const Text = styled.p`
     text-align: left;

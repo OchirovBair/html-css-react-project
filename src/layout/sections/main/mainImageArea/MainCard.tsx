@@ -34,12 +34,7 @@ export const MainCard = (props: any) => {
 
 
 const MainImage = styled.img`
-    max-width: 468px;
-    width: 100%;
-    //position: absolute;
-    left: 60px;
-    margin: 0 51px 93px 0;
-    //background-size: cover;
+    margin: 0 50px 93px 60px;
 `
 
 const CardPlaceholder = styled.div`
@@ -52,23 +47,21 @@ const CardPlaceholder = styled.div`
     gap: 24px;
     position: absolute;
     z-index: 1;
-    bottom: -20px;
-    right: -20px;
+    bottom: 0;
+    right: 0;
 `
 
 const StyledMainImageArea = styled.div`
     position: relative;
-    // width: 100%;
-    // max-width: 468px;
-    // aspect-ratio: 3/4;
-    // background-image: url();
-    // background-repeat: no-repeat;
-    // background-size: cover;
+    width: 100%;
+    height: 100%;
+    //padding: 0 50px 93px 60px;
 `
 
 const StyledIconWrapper = styled.div`
     position: absolute;
     z-index: 1;
     top: 223px;
-    transform: translateY(-50%);
+    //left: -30px;
+    //transform: translateX(50%);
 `

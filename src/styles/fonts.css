@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Source Sans Pro';
+    src:    local('Source Sans Pro'),
+            url(../assets/fonts/SourceSansPro-Bold.eot?) format('eot'),
+            url(../assets/fonts/SourceSansPro-Bold.woff2?) format('woff2'),
+            url(../assets/fonts/SourceSansPro-Bold.ttf?) format('truetype');
+    font-weight: 700; /*bold;*/
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Canela;
+    src:    local('Canela'),
+            url(../assets/fonts/Canela-Medium.woff2?) format('woff2'),
+            url(../assets/fonts/Canela-Medium.eot) format('eot'),
+            url(../assets/fonts/Canela-Medium.ttf?) format('truetype');
+    font-weight: 500; /* medium */
+    font-style: normal;
+}

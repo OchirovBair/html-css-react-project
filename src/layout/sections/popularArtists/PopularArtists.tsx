@@ -39,7 +39,7 @@ const PopularArtistsGridWrapper = styled.div`
         grid-area: 2/1/3/3;
     }
 
-    //div:last-child {
+    //& > div:last-child {
     //    grid-area: 2/1/3/3;
     //}
 `
