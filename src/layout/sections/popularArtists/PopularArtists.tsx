@@ -14,7 +14,7 @@ export const PopularArtists = () => {
                     <div>
                         <SectionTitle>Popular Artists<br/>On This Week</SectionTitle>
                     </div>
-                    <Button width='134px' height='52px'>See All</Button>
+                    <Button>See All</Button>
                     <Dashboard/>
                 </PopularArtistsGridWrapper>
             </Container>

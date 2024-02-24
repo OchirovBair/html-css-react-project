@@ -11,7 +11,7 @@ export const CardInformation = (props: CardInformationPropsType) => {
     return (
         <StyledCardInformation>
             <span>Ending In</span>
-            <FlexWrapper align='center' justify='flex-start' gap='12px'>
+            <FlexWrapper $align='center' $justify='flex-start' $gap='12px'>
                 <Icon iconId='clock' width='24px' height='24px' viewBox='0 0 24 24'/>
                 <span>{props.time}</span>
             </FlexWrapper>

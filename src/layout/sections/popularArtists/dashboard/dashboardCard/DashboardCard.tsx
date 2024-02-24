@@ -8,7 +8,7 @@ export const DashboardCard = (props: any) => {
             <MainImg src={props.data.linkImg} alt="nft"/>
             <OwnerInfo>
                 <OwnerImg src={props.data.artistAvatar} alt="avatar"/>
-                <FlexWrapper direction='column'>
+                <FlexWrapper $direction='column'>
                     <span>Owner</span>
                     <span>{props.data.artistName}</span>
                 </FlexWrapper>

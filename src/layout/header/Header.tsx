@@ -4,25 +4,28 @@ import {Logo} from "../../components/Logo/Logo";
 import styled from "styled-components";
 import {FlexWrapper} from "../../components/FlewWrapper";
 import {Link} from "../../components/Link";
+import {Button} from "../../components/Button";
+import {Container} from "../../components/Container";
 
 const menuItems = ['Marketplace', 'Artists', 'Community', 'Collections'];
 export const Header = () => {
     return (
         <StyledHeader>
-            <FlexWrapper justify='space-between' align='center'>
-                <Logo/>
-                <Menu items={menuItems}/>
-                <Link href={'#'}>Contact</Link>
-            </FlexWrapper>
+            <Container>
+                <FlexWrapper $justify='space-between' $align='center'>
+                    <Logo/>
+                    <Menu items={menuItems}/>
+                    <Button>Contact</Button>
+                </FlexWrapper>
+            </Container>
         </StyledHeader>
     );
 };
 
 const StyledHeader = styled.header`
-    padding: 28px 0 24px;
-    max-width: 1320px;
-    width: 100%;
-    height: 100%;
-    //outline: 2px solid green;
-    margin: 0 auto;
+    padding: 28px 0 28px;
+    background-color: rgba(0, 0, 0, 0.85);
+    position: sticky;
+    top: 0;
+    z-index: 9999;
 `

@@ -16,8 +16,8 @@ export const CardList = () => {
 
 const StyledExamplesList = styled.div`
     display: flex;
-    gap: 30px;
     grid-area: 2/1/3/3;
-    justify-self: center;
-    align-self: center;
+    gap: 30px;
+    //flex-wrap: wrap;
+    //overflow-x: auto;
 `

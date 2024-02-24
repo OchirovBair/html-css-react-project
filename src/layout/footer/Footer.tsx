@@ -12,8 +12,8 @@ export const Footer = () => {
     return (
         <StyledFooter>
             <Container>
-                <MenuFlexWrapper gap='293px'>
-                    <FlexWrapper direction='column'>
+                <MenuFlexWrapper $gap='293px'>
+                    <FlexWrapper $direction='column'>
                         <Logo/>
                         <FooterText>Discover NFTs by category, track the latest drop, and and follow the collections you
                             love. Enjoy it!</FooterText>
@@ -23,9 +23,9 @@ export const Footer = () => {
                         <Menu/>
                     </FlexWrapper>
                 </MenuFlexWrapper>
-                <CopryrigtFlexWrapper justify='space-between'>
+                <CopryrigtFlexWrapper $justify='space-between'>
                     <span>© Copyright 2023 - Creativeart</span>
-                    <FlexWrapper gap='28px'>
+                    <FlexWrapper $gap='28px'>
                         <Link>Privacy Policy</Link>
                         <Link>Terms & Conditions</Link>
                     </FlexWrapper>

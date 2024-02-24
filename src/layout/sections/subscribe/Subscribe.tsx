@@ -5,24 +5,25 @@ import {FlexWrapper} from "../../../components/FlewWrapper";
 import {SectionTitle} from "../../../components/SectionTitle";
 import img1 from "../../../assets/images/subscribe/img1.png";
 import img2 from "../../../assets/images/subscribe/img2.png";
+import {Button} from "../../../components/Button";
 
 export const Subscribe = () => {
     return (
         <StyledSubscribe>
             <Container>
-                <FlexWrapper gap='124px' align='center'>
+                <FlexWrapper $gap='124px' $align='center'>
                     <StyledSubscribeImages>
                         <img src={img1} alt="example"/>
                         <img src={img2} alt="example"/>
                     </StyledSubscribeImages>
                     <StyledSubscribeInfo>
-                        <FlexWrapper direction='column' align='flex-start' >
+                        <FlexWrapper $direction='column' $align='flex-start' >
                             <SectionTitle>Subscribe And get our<br/>Updates Every Week</SectionTitle>
                             <SubscribeText>We have a blog related to NFT so we can share thoughts and routines on our blog which is updated weekly</SubscribeText>
-                            <FlexWrapper align='center' gap='36px'>
+                            <FlexWrapper $align='center' $gap='36px'>
                                 <form action="">
                                     <input type="email" name='email' placeholder='Enter your e-mail'/>
-                                    <input type="submit" value='Subscribe'/>
+                                    <Button type={'submit'}>Subscribe</Button>
                                 </form>
                             </FlexWrapper>
                         </FlexWrapper>

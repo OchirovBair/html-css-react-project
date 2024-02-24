@@ -39,11 +39,10 @@ const StyledMain = styled.section`
 
 const MainGridWrapper = styled.div`
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    //grid-template-rows: auto auto;
-    align-items: center;
+    grid-template-columns: minmax(auto, 544px) minmax(auto, 575px);
     grid-auto-rows: auto;
-    grid-column-gap: 171px;
+
+    justify-content: space-between;
     grid-row-gap: 72px;
 
     & > div:nth-child(2) {

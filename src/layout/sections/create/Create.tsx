@@ -13,12 +13,12 @@ export const Create = () => {
     return (
         <StyledCreate>
             <Container>
-                <FlexWrapper gap='124px' align='center'>
+                <FlexWrapper $gap='124px' $align='center'>
                     <StyledCreateInfo>
-                        <FlexWrapper direction='column' justify='center' align='flex-start'>
+                        <FlexWrapper $direction='column' $justify='center' $align='flex-start'>
                             <SectionTitle>Create And Sell<br/>Your Best NFTs</SectionTitle>
                             <CreateText>Start exploring the world of digital art and NFTs today and take control of your digital assets with confidence!</CreateText>
-                            <FlexWrapper align='center' gap='36px'>
+                            <FlexWrapper $align='center' $gap='36px'>
                                 <Button>Create Now</Button>
                                 <Link>Learn More</Link>
                             </FlexWrapper>

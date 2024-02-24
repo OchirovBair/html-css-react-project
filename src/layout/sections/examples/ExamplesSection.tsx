@@ -4,41 +4,31 @@ import {Container} from "../../../components/Container";
 import {Button} from "../../../components/Button";
 import {SectionTitle} from "../../../components/SectionTitle";
 import {CardList} from "./cardList/CardList";
+import {theme} from "../../../styles/Theme";
 
 export const ExamplesSection = () => {
     return (
         <StyledExamples>
             <Container>
-                <ExamplesGirdWrapper>
-                    <div>
-                        <SectionTitle>Amazing and Super<br/>Unique Art of This Week</SectionTitle>
-                    </div>
-                    <Button width='134px' height='52px'>See All</Button>
+                <ExamplesGridWrapper>
+                    <SectionTitle><span>Amazing</span> and Super Unique Art of This <span>Week</span></SectionTitle>
+                    <Button>See All</Button>
                     <CardList/>
-                </ExamplesGirdWrapper>
+                </ExamplesGridWrapper>
             </Container>
         </StyledExamples>
     );
 };
 
 const StyledExamples = styled.section`
-    
+
 `
 
-const ExamplesGirdWrapper = styled.div`
+const ExamplesGridWrapper = styled.div`
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: minmax(auto, 506px) min-content;
     grid-template-rows: auto auto;
-    align-items: center;
-    row-gap: 64px;
-
-    div:nth-child(2) {
-       
-    }
-
-    button {
-        justify-self: end;
-        
-    }
+    justify-content: space-between;
+    grid-row-gap: 64px;
 `
 

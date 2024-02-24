@@ -1,5 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 import bg from '../assets/images/background/bgImage.png'
+import {theme} from "./Theme";
 
 
 export const GlobalStyle = createGlobalStyle`
@@ -20,7 +21,11 @@ export const GlobalStyle = createGlobalStyle`
         font-style: normal;
         line-height: 1.2;
         position: relative;
+                
         background-color: #090F1D;
+        color: ${theme.color.primaryFont};
+
+        min-width: 360px;
     }
 
 
@@ -43,18 +48,12 @@ export const GlobalStyle = createGlobalStyle`
 
     button, a {
         cursor: pointer;
+        border: none;
+        background-color: unset;
     }
 
     a {
         text-decoration: none;
-        color: white;
-    }
-
-    p,
-    h3,
-    h2,
-    h1,
-    span {
         color: white;
     }
 
