@@ -1,32 +1,32 @@
 {
   "files": {
     "main.css": "/html-css-react-project/static/css/main.d201b019.css",
-    "main.js": "/html-css-react-project/static/js/main.d07cb0d3.js",
+    "main.js": "/html-css-react-project/static/js/main.d7e1a94a.js",
     "static/js/592.d72b5737.chunk.js": "/html-css-react-project/static/js/592.d72b5737.chunk.js",
     "static/media/bgImage.png": "/html-css-react-project/static/media/bgImage.bff12f429e5d91957a16.png",
+    "static/media/img3.png": "/html-css-react-project/static/media/img3.9bc67e26a8f39f374879.png",
     "static/media/mainImg.png": "/html-css-react-project/static/media/mainImg.58c926bb93ee6dd12888.png",
-    "static/media/img3.png": "/html-css-react-project/static/media/img3.ebbc2229558e3ba50395.png",
     "static/media/img2.png": "/html-css-react-project/static/media/img2.c4338b73d923a73cc9b0.png",
-    "static/media/img1.png": "/html-css-react-project/static/media/img1.483dc05c901976df7279.png",
+    "static/media/img1.png": "/html-css-react-project/static/media/img1.c35611f73341141e1f33.png",
+    "static/media/img5.png": "/html-css-react-project/static/media/img5.308ebd6650d5f7f7ac08.png",
+    "static/media/img4.png": "/html-css-react-project/static/media/img4.ee311e8434d0ab86211d.png",
     "static/media/cardImg3.png": "/html-css-react-project/static/media/cardImg3.6ad037d6722cec1599ea.png",
-    "static/media/img4.png": "/html-css-react-project/static/media/img4.fb909bc7fb4877f59618.png",
-    "static/media/img5.png": "/html-css-react-project/static/media/img5.41e76599eb4102c839e1.png",
     "static/media/cardImg1.png": "/html-css-react-project/static/media/cardImg1.2c1668faac144a48292f.png",
     "static/media/cardImg2.png": "/html-css-react-project/static/media/cardImg2.60f5dd67a42eeffeb7b1.png",
     "static/media/Canela-Medium.eot": "/html-css-react-project/static/media/Canela-Medium.7576dbdc66f5a8c96c76.eot",
     "static/media/Canela-Medium.ttf?": "/html-css-react-project/static/media/Canela-Medium.dfc1c97107f3bbf021a1.ttf",
     "static/media/SourceSansPro-Bold.ttf?": "/html-css-react-project/static/media/SourceSansPro-Bold.8a1dab6b26e68026997d.ttf",
     "static/media/SourceSansPro-Bold.eot?": "/html-css-react-project/static/media/SourceSansPro-Bold.77b7ff40494122c5c370.eot",
-    "static/media/icons-sprite.svg": "/html-css-react-project/static/media/icons-sprite.c152aa4385390f968ea3a3c1121de6f2.svg",
+    "static/media/icons-sprite.svg": "/html-css-react-project/static/media/icons-sprite.9eb62996062ae097028b158c0c1b1474.svg",
     "static/media/SourceSansPro-Bold.woff2?": "/html-css-react-project/static/media/SourceSansPro-Bold.76ece67d62d0fcd67975.woff2",
     "static/media/Canela-Medium.woff2?": "/html-css-react-project/static/media/Canela-Medium.1d2bd7d3cbf461e66596.woff2",
     "index.html": "/html-css-react-project/index.html",
     "main.d201b019.css.map": "/html-css-react-project/static/css/main.d201b019.css.map",
-    "main.d07cb0d3.js.map": "/html-css-react-project/static/js/main.d07cb0d3.js.map",
+    "main.d7e1a94a.js.map": "/html-css-react-project/static/js/main.d7e1a94a.js.map",
     "592.d72b5737.chunk.js.map": "/html-css-react-project/static/js/592.d72b5737.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d201b019.css",
-    "static/js/main.d07cb0d3.js"
+    "static/js/main.d7e1a94a.js"
   ]
 }
