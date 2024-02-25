@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/html-css-react-project/static/css/main.d201b019.css",
-    "main.js": "/html-css-react-project/static/js/main.d7e1a94a.js",
+    "main.js": "/html-css-react-project/static/js/main.38eaa034.js",
     "static/js/592.d72b5737.chunk.js": "/html-css-react-project/static/js/592.d72b5737.chunk.js",
     "static/media/bgImage.png": "/html-css-react-project/static/media/bgImage.bff12f429e5d91957a16.png",
     "static/media/img3.png": "/html-css-react-project/static/media/img3.9bc67e26a8f39f374879.png",
@@ -22,11 +22,11 @@
     "static/media/Canela-Medium.woff2?": "/html-css-react-project/static/media/Canela-Medium.1d2bd7d3cbf461e66596.woff2",
     "index.html": "/html-css-react-project/index.html",
     "main.d201b019.css.map": "/html-css-react-project/static/css/main.d201b019.css.map",
-    "main.d7e1a94a.js.map": "/html-css-react-project/static/js/main.d7e1a94a.js.map",
+    "main.38eaa034.js.map": "/html-css-react-project/static/js/main.38eaa034.js.map",
     "592.d72b5737.chunk.js.map": "/html-css-react-project/static/js/592.d72b5737.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d201b019.css",
-    "static/js/main.d7e1a94a.js"
+    "static/js/main.38eaa034.js"
   ]
 }
