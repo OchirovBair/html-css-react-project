@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
 import {Icon} from "../../../components/icon/Icon";
+import {theme} from "../../../styles/Theme";
 
 export const SocialLinks = () => {
     return (
@@ -17,4 +18,9 @@ const StyledSocialLinks = styled.ul`
     display: flex;
     flex-direction: row;
     gap: 12px;
+    
+    a:hover {
+        //transform: translateY();
+        color: ${theme.color.accent};
+    }
 `

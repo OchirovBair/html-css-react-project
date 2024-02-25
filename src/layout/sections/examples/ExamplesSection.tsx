@@ -21,14 +21,34 @@ export const ExamplesSection = () => {
 };
 
 const StyledExamples = styled.section`
+    & > div {
+        position: relative;
 
+        &:before {
+            content: '';
+            position: absolute;
+            width: 434px;
+            height: 305px;
+            background-color: ${theme.color.bgColorBlur};
+            filter: blur(100px);
+            bottom: -140px;
+            right: -130px;
+            z-index: -1;
+        }
+    }
 `
+
 
 const ExamplesGridWrapper = styled.div`
     display: grid;
-    grid-template-columns: minmax(auto, 506px) min-content;
+    grid-template-columns: minmax(auto, 506px) auto;
     grid-template-rows: auto auto;
-    justify-content: space-between;
+    //justify-content: space-between;
     grid-row-gap: 64px;
+
+    button {
+        justify-self: end;
+        align-self: center;
+    }
 `
 

@@ -8,15 +8,16 @@ import {Link} from "../../../components/Link";
 import {FlexWrapper} from "../../../components/FlewWrapper";
 import img1 from '../../../assets/images/create/img1.png'
 import img2 from '../../../assets/images/create/img2.png'
+import {theme} from "../../../styles/Theme";
 
 export const Create = () => {
     return (
         <StyledCreate>
             <Container>
-                <FlexWrapper $gap='124px' $align='center'>
+                <FlexWrapper $gap='48px' $align='center' $justify='space-between'>
                     <StyledCreateInfo>
                         <FlexWrapper $direction='column' $justify='center' $align='flex-start'>
-                            <SectionTitle>Create And Sell<br/>Your Best NFTs</SectionTitle>
+                            <SectionTitle>Create And Sell Your <span>Best NFTs</span></SectionTitle>
                             <CreateText>Start exploring the world of digital art and NFTs today and take control of your digital assets with confidence!</CreateText>
                             <FlexWrapper $align='center' $gap='36px'>
                                 <Button>Create Now</Button>
@@ -35,31 +36,58 @@ export const Create = () => {
 };
 
 const StyledCreate = styled.section`
+    & > div {
+        position: relative;
 
+        &:before {
+            content: '';
+            position: absolute;
+            background-color: ${theme.color.bgColorBlur};
+            width: 346px;
+            height: 128px;
+            filter: blur(100px);
+            bottom: -45px;
+            right: 0;
+            z-index: -1;
+        }
+    }
 `
 
 const StyledExamplesImages = styled.div`
-    height: 560px;
-    width: 740px;
+    height: 40vw;
+    width: 60vw;
+    max-width: 740px;
+    min-width: 345px;
+    max-height: 560px;
+    min-height: 260px;
     position: relative;
-    
+
     img:first-child {
         position: absolute;
         bottom: 0;
         left: 0;
         z-index: 1;
+        width: 55%;
+        min-width: 190px;
+        min-height: 186px;
     }
-    
+
     img:last-child {
         position: absolute;
         top: 0;
         right: 0;
+        width: 55%;
+        min-width: 190px;
+        min-height: 220px;
     }
 `
 
 const CreateText = styled(Text)`
     margin: 20px 0 40px;
     text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
 `
 
 const StyledCreateInfo = styled.div`

@@ -20,11 +20,9 @@ export const Button = styled.button<ButtonPropsType>`
     color: ${props => props.$font_color || theme.color.secondaryFont};
 
     &:hover {
-        //transform: translateY(-2px);
         transform: scale(1.05);
         
         &:active {
-            //transform: translateY(0);
             transform: scale(1);
         }
     }

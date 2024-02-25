@@ -2,7 +2,13 @@ import React from 'react';
 import {FlexWrapper} from "../../../../../components/FlewWrapper";
 import styled from "styled-components";
 
-export const DashboardCard = (props: any) => {
+type DashboardCardPropsType = {
+    linkImg: string,
+    artistAvatar: string,
+    artistName: string
+}
+
+export const DashboardCard = (props: {data:DashboardCardPropsType}) => {
     return (
         <StyledDashboardCard>
             <MainImg src={props.data.linkImg} alt="nft"/>
@@ -19,15 +25,22 @@ export const DashboardCard = (props: any) => {
 
 const StyledDashboardCard = styled.div`
     position: relative;
+    overflow: hidden;
+    border-radius: 16px;
+    //display: flex;
 `
 
 const OwnerInfo = styled.div`
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     gap: 12px;
     position: absolute;
-    bottom: 24px;
-    left: 24px;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0 24px 24px;
+    //border-radius: 16px;
+    background: linear-gradient(1.43deg, rgba(19, 30, 58, 0.92) 17.438%,rgba(19, 30, 58, 0) 51.383%);
 `
 
 const OwnerImg = styled.img`
@@ -35,5 +48,8 @@ const OwnerImg = styled.img`
 `
 
 const MainImg = styled.img`
-
+    object-fit: cover;
+    object-position: top;
+    width: 100%;
+    height: 100%;
 `

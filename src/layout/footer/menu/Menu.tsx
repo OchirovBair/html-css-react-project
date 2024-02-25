@@ -34,7 +34,7 @@ export const Menu = () => {
     );
 };
 
-const StyledMenu = styled.div`
+const StyledMenu = styled.nav`
     display: flex;
     gap: 94px;
 `

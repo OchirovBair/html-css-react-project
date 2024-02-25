@@ -42,6 +42,9 @@ const StyledFooter = styled.footer`
 const FooterText = styled.p`
     text-align: left;
     margin: 20px 0 24px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
 `
 
 const MenuFlexWrapper = styled(FlexWrapper)`
@@ -51,5 +54,9 @@ const MenuFlexWrapper = styled(FlexWrapper)`
 `
 
 const CopryrigtFlexWrapper = styled(FlexWrapper)`
-    
+    & > span {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.6;
+    }
 `

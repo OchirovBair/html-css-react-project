@@ -62,13 +62,10 @@ const StyledMainImageArea = styled.div`
     position: relative;
     width: 100%;
     height: 100%;
-    //padding: 0 50px 93px 60px;
 `
 
 const StyledIconWrapper = styled.div`
     position: absolute;
     z-index: 1;
     top: 223px;
-    //left: -30px;
-    //transform: translateX(50%);
 `

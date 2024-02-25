@@ -6,6 +6,7 @@ export const theme = {
         primaryFont: '#FFFFFD',
         secondaryFont: '#090F1D',
         thirdFont: '',
-        bgColor: '#131E3A'
+        bgColor: '#131E3A',
+        bgColorBlur: '#1F413D',
     }
 }

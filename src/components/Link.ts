@@ -6,6 +6,7 @@ export const Link = styled.a`
     font-weight: 400;
     line-height: 1.6;
     position: relative;
+    white-space: nowrap;
     
     &::before {
         content: '';

@@ -16,13 +16,13 @@ export const Dashboard = () => {
     );
 };
 
-const StyledDashboard = styled.div.attrs({
-    className: 'dashboard',
-})`
+
+const StyledDashboard = styled.div`
     display: grid;
-    grid-template-columns: auto 80px auto auto;
+    grid-template-columns: minmax(auto, 300px) 80px minmax(auto, 410px) minmax(auto, 410px);
     grid-auto-rows: auto;
     gap: 30px;
+    grid-area: 2/1/3/3;
 
     div:nth-child(2) {
         grid-area: 1/2/2/4;
@@ -39,4 +39,5 @@ const StyledDashboard = styled.div.attrs({
     div:nth-child(5) {
         grid-area: 2/3/3/4;
     }
-`
+
+// `

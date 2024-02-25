@@ -14,7 +14,6 @@ export const GlobalStyle = createGlobalStyle`
 
     body {
         font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif; 
-        
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         font-weight: normal;
@@ -37,7 +36,7 @@ export const GlobalStyle = createGlobalStyle`
          background-position: center;
          background-repeat: no-repeat;
          inset: 0;
-         z-index: -1; 
+         z-index: -999; 
          mix-blend-mode: color-burn;
      }
 

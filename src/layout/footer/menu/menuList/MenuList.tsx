@@ -11,17 +11,23 @@ export const MenuList = (props: MenuLustPropsType) => {
     return (
         <StyledMenuList>
             <ThirdTitle>{props.title}</ThirdTitle>
-            <ul>
+            <List>
                 {props.items.map((item, index) => {
                     return <ListItem key={index}><Link href='#'>{item}</Link></ListItem>
                 })}
-            </ul>
+            </List>
         </StyledMenuList>
     );
 };
 
-const StyledMenuList = styled.nav`
+const StyledMenuList = styled.div`
 
+`
+
+const List = styled.ul`
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 `
 
 const ListItem = styled.li`
@@ -30,4 +36,6 @@ const ListItem = styled.li`
 
 const ThirdTitle = styled.h3`
     margin-bottom: 24px;
+    font-size: 20px;
+    font-weight: 700;
 `

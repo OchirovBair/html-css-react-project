@@ -11,9 +11,7 @@ export const PopularArtists = () => {
         <StyledPopularArtists>
             <Container>
                 <PopularArtistsGridWrapper>
-                    <div>
-                        <SectionTitle>Popular Artists<br/>On This Week</SectionTitle>
-                    </div>
+                    <SectionTitle>Popular <span>Artists</span> On This Week</SectionTitle>
                     <Button>See All</Button>
                     <Dashboard/>
                 </PopularArtistsGridWrapper>
@@ -27,19 +25,14 @@ const StyledPopularArtists = styled.section`
 
 const PopularArtistsGridWrapper = styled.div`
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: minmax(auto, 307px) auto;
     grid-template-rows: auto auto;
-    align-items: center;
+    //justify-content: space-between;
+    //align-items: center;
+    grid-row-gap: 84px;
 
     button {
         justify-self: end;
+        align-self: center;
     }
-
-    .dashboard {
-        grid-area: 2/1/3/3;
-    }
-
-    //& > div:last-child {
-    //    grid-area: 2/1/3/3;
-    //}
 `

@@ -5,6 +5,7 @@ import {MainCard} from "./mainImageArea/MainCard";
 import {MainInformation} from "./mainInformation/MainInformation";
 import {Container} from "../../../components/Container";
 import {data} from "../../../data/data";
+import {theme} from "../../../styles/Theme";
 
 export const MainSection = () => {
     return (
@@ -21,21 +22,34 @@ export const MainSection = () => {
 };
 
 const StyledMain = styled.section`
-    position: relative;
-    
-    &::before {
-        content: '';
-        width: 630px;
-        height: 460px;
-        filter: blur(400px);
-        background: rgb(31, 65, 61);
-        position: absolute;
-        left: 550px;
-        top: 353px;
-        z-index: 1;
+    & > div {
+        position: relative;
+
+        &:before {
+            content: '';
+            width: 630px;
+            height: 460px;
+            filter: blur(200px);
+            background-color: ${theme.color.bgColorBlur};
+            position: absolute;
+            left: 430px;
+            top: 170px;
+            z-index: -1;
+        }
+        
+        &:after {
+            content: '';
+            width: 352px;
+            height: 221px;
+            filter: blur(100px);
+            background-color: ${theme.color.bgColorBlur};
+            position: absolute;
+            bottom: -70px;
+            right: -53px;
+            z-index: -1;
+        }
     }
 `
-
 
 const MainGridWrapper = styled.div`
     display: grid;
