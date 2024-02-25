@@ -35,8 +35,31 @@ export const MainCard = (props: any) => {
 };
 
 
+const StyledMainImageArea = styled.div`
+    position: relative;
+    padding: 0 50px 93px 60px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`
+
+const StyledIconWrapper = styled.div`
+    position: absolute;
+    z-index: 1;
+    top: 35%;
+    left: 0;
+`
+
 const MainImage = styled.img`
-    margin: 0 50px 93px 60px;
+    max-width: 464px;
+    max-height: 544px;
+    min-width: 294px;
+    min-height: 344px;
+    width: 100%;
+    //height: auto;
+    //margin: 0 50px 93px 60px;
 `
 
 const CardPlaceholder = styled.div`
@@ -56,16 +79,4 @@ const CardPlaceholder = styled.div`
     & span:first-child {
         color: ${theme.color.accent};
     }
-`
-
-const StyledMainImageArea = styled.div`
-    position: relative;
-    width: 100%;
-    height: 100%;
-`
-
-const StyledIconWrapper = styled.div`
-    position: absolute;
-    z-index: 1;
-    top: 223px;
 `

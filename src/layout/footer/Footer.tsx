@@ -5,23 +5,22 @@ import {Logo} from "../../components/Logo/Logo";
 import {Container} from "../../components/Container";
 import {SocialLinks} from "./socialLinks/SocialLinks";
 import {Menu} from "./menu/Menu";
-import {Text} from "../../components/Text";
 import {Link} from "../../components/Link";
 
 export const Footer = () => {
     return (
         <StyledFooter>
             <Container>
-                <MenuFlexWrapper $gap='293px'>
+                <MenuFlexWrapper $justify='space-between' $gap='100px' $align='center'>
                     <FlexWrapper $direction='column'>
                         <Logo/>
                         <FooterText>Discover NFTs by category, track the latest drop, and and follow the collections you
                             love. Enjoy it!</FooterText>
                         <SocialLinks/>
                     </FlexWrapper>
-                    <FlexWrapper>
+                    {/*<FlexWrapper>*/}
                         <Menu/>
-                    </FlexWrapper>
+                    {/*</FlexWrapper>*/}
                 </MenuFlexWrapper>
                 <CopryrigtFlexWrapper $justify='space-between'>
                     <span>© Copyright 2023 - Creativeart</span>
@@ -51,6 +50,11 @@ const MenuFlexWrapper = styled(FlexWrapper)`
     padding: 0 18px 48px;
     border-bottom: 1px solid rgb(131, 131, 130);
     margin-bottom: 48px;
+    
+    & > div:first-child {
+        max-width: 272px;
+        width: 100%;
+    }
 `
 
 const CopryrigtFlexWrapper = styled(FlexWrapper)`

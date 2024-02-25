@@ -28,7 +28,14 @@ export const StatisticsList = () => {
 const StyledStatisticsList = styled.div`
     ul {
         display: flex;
-        gap: 94px;
+        gap: 24px;
+        justify-content: space-between;
+        
+        & > li:first-child,
+        & > li:nth-child(2) {
+            border-right: 1px solid ${theme.color.accent};
+            padding-right: 24px;
+        }
         
         & > li > span {
             font-family: Inter, sans-serif;

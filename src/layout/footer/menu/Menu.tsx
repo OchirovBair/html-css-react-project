@@ -36,5 +36,9 @@ export const Menu = () => {
 
 const StyledMenu = styled.nav`
     display: flex;
-    gap: 94px;
+    gap: 40px;
+    justify-content: space-between;
+    max-width: 688px;
+    width: 100%;
+    
 `

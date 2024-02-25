@@ -61,6 +61,7 @@ const MainGridWrapper = styled.div`
 
     & > div:nth-child(2) {
         grid-area: 1/2/3/3;
+        align-self: center;
     }
 
     & > div:nth-child(1) {
