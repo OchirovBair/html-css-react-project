@@ -3,7 +3,6 @@ import {Menu} from "../../components/menu/Menu";
 import {Logo} from "../../components/Logo/Logo";
 import styled from "styled-components";
 import {FlexWrapper} from "../../components/FlewWrapper";
-import {Link} from "../../components/Link";
 import {Button} from "../../components/Button";
 import {Container} from "../../components/Container";
 

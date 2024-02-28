@@ -26,7 +26,7 @@ export const MainCard = (props: any) => {
                             <span>{props.data.priceInEth}ETH</span>
                         </FlexWrapper>
                     </FlexWrapper>
-                    <Button $bg_color='unset' $border='1px solid rgb(211, 248, 90)' $font_color={theme.color.accent}>Place A
+                    <Button $bg_color='unset' $outline='1px solid rgb(211, 248, 90)' $font_color={theme.color.accent}>Place A
                         Bid</Button>
                 </FlexWrapper>
             </CardPlaceholder>

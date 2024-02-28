@@ -23,7 +23,7 @@ export const Card = (props: {data:CardType}) => {
                 </ExamplesFlexWrapper>
                 <FlexWrapper $align='center' $justify='space-between'>
                     <CardInformation time={props.data.endingTime}/>
-                    <Button>Place A Bid</Button>
+                    <Button $bg_color='unset' $outline='1px solid rgb(211, 248, 90)' $font_color={theme.color.accent}>Place A Bid</Button>
                 </FlexWrapper>
         </StyledCard>
     );

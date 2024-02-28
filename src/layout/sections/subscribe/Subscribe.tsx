@@ -114,7 +114,7 @@ const SubscribeForm = styled.form`
     & > div {
         position: absolute;
         z-index: 1;
-        right: 0;
+        right: 4px;
         top: 50%;
         transform: translateY(-50%);
     }
