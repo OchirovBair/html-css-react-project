@@ -1,6 +1,7 @@
 import React from 'react';
 import {Icon} from "../../../../../../components/icon/Icon";
 import styled from "styled-components";
+import {iconData} from "../../../../../../data/iconData";
 
 type PricePropsType = {
     price: number
@@ -9,7 +10,7 @@ type PricePropsType = {
 export const Price = (props: PricePropsType) => {
     return (
         <StyledPrice>
-            <Icon iconId='priceSvg' width='24px' height='24px' viewBox='0 0 24 24'/>
+            <Icon mainIconState={iconData.priceSvg}/>
             <span>{props.price}ETH</span>
         </StyledPrice>
     );

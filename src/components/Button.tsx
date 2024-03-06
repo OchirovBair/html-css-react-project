@@ -28,4 +28,8 @@ export const Button = styled.button<ButtonPropsType>`
             transform: scale(1);
         }
     }
+    
+    @media screen and ${theme.media.largeTablet}{
+        padding-top: 7px;
+    }
 `

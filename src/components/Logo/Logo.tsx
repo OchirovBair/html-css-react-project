@@ -1,10 +1,13 @@
 import React from 'react';
 import {Icon} from "../icon/Icon";
+import {iconData} from "../../data/iconData";
+
+
 
 export const Logo = () => {
     return (
         <a href="#">
-            <Icon iconId='logo' width='196.000977' height='47.280029' viewBox='0 0 196.000977 47.280029'/>
+            <Icon mainIconState={iconData.logo}/>
         </a>
     );
 };

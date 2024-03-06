@@ -20,7 +20,7 @@ export const Subscribe = () => {
                     <StyledSubscribeInfo>
                         <FlexWrapper $direction='column'>
                             <SectionTitle>Subscribe And <span>get our Updates</span> Every Week</SectionTitle>
-                            <SubscribeText>We have a blog related to NFT so we can share thoughts and routines on our blog which is updated weekly</SubscribeText>
+                            <Text>We have a blog related to NFT so we can share thoughts and routines on our blog which is updated weekly</Text>
                             <FlexWrapper $align='center' $gap='36px'>
                                 <SubscribeForm>
                                     <Input type="email" name='email' placeholder='Enter your e-mail'/>
@@ -99,12 +99,9 @@ const StyledSubscribeInfo = styled.div`
     width: 100%;
 `
 
-const SubscribeText = styled.p`
+const Text = styled.p`
     text-align: left;
     margin: 20px 0 40px;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.6;
 `
 
 const SubscribeForm = styled.form`

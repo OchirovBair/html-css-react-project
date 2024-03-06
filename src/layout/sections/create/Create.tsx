@@ -2,7 +2,6 @@ import React from 'react';
 import styled from "styled-components";
 import {Container} from "../../../components/Container";
 import {SectionTitle} from "../../../components/SectionTitle";
-import {Text} from "../../../components/Text";
 import {Button} from "../../../components/Button";
 import {Link} from "../../../components/Link";
 import {FlexWrapper} from "../../../components/FlewWrapper";
@@ -18,7 +17,7 @@ export const Create = () => {
                     <StyledCreateInfo>
                         <FlexWrapper $direction='column' $justify='center' $align='flex-start'>
                             <SectionTitle>Create And Sell Your <span>Best NFTs</span></SectionTitle>
-                            <CreateText>Start exploring the world of digital art and NFTs today and take control of your digital assets with confidence!</CreateText>
+                            <Text>Start exploring the world of digital art and NFTs today and take control of your digital assets with confidence!</Text>
                             <FlexWrapper $align='center' $gap='36px'>
                                 <Button>Create Now</Button>
                                 <Link>Learn More</Link>
@@ -82,15 +81,17 @@ const StyledExamplesImages = styled.div`
     }
 `
 
-const CreateText = styled(Text)`
+const Text = styled.p`
     margin: 20px 0 40px;
     text-align: left;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.6;
 `
 
 const StyledCreateInfo = styled.div`
     max-width: 426px;
     width: 100%;
+    
+    & > div > div > a {
+        font-weight: 700;
+        line-height: 1.2;
+    }
 `

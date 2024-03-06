@@ -1,27 +1,40 @@
 import React from 'react';
-import {Icon} from "../../../../components/icon/Icon";
+import {Icon, IconType} from "../../../../components/icon/Icon";
 import MainImg from "../../../../assets/images/mainSection/mainImg.png";
 import {FlexWrapper} from "../../../../components/FlewWrapper";
 import {Button} from "../../../../components/Button";
 import styled from "styled-components";
 import {theme} from "../../../../styles/Theme";
 
+const mainIcon: IconType = {
+    width: "171.594971",
+    height: "171.501465",
+    viewBox: "0 0 171.595 171.501",
+    iconId: 'desktopMainSectionSvg'
+}
+
+const mediaIcon: IconType = {
+    width: "81.972717",
+    height: "81.972717",
+    viewBox: "0 0 81.9727 81.2578",
+    iconId: 'mediaMainSectionSvg'
+}
+
 export const MainCard = (props: any) => {
     return (
         <StyledMainImageArea>
             <StyledIconWrapper>
-                <Icon iconId='desktopMainSectionSvg' width="171.594971" height="171.501465"
-                      viewBox="0 0 171.595 171.501"/>
+                <Icon mainIconState={mainIcon} mediaIconState={mediaIcon} mediaQuery={theme.media.largeTablet}/>
             </StyledIconWrapper>
             <MainImage src={MainImg} alt="mainSection"/>
             <CardPlaceholder>
-                <FlexWrapper $direction='column' $gap='24px'>
+                <FlexWrapper $direction='column' $justify={'space-between'}>
                     <FlexWrapper $justify='space-between'>
-                        <FlexWrapper $direction='column'>
+                        <FlexWrapper $direction='column' $gap={'8px'}>
                             <span>Ends in</span>
                             <span>{props.data.endingTime}</span>
                         </FlexWrapper>
-                        <FlexWrapper $direction='column'>
+                        <FlexWrapper $direction='column' $gap={'8px'}>
                             <span>Current bid</span>
                             <span>{props.data.priceInEth}ETH</span>
                         </FlexWrapper>
@@ -43,6 +56,11 @@ const StyledMainImageArea = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    
+    
+    @media screen and ${theme.media.largeTablet}{
+        padding: 0 20px 76px 29px;
+    }
 `
 
 const StyledIconWrapper = styled.div`
@@ -68,8 +86,8 @@ const CardPlaceholder = styled.div`
     box-shadow: 0 9px 50px 0 rgba(23, 36, 65, 0.04);
     background: ${theme.color.bgColor};
     padding: 20px;
-    max-width: 304px;
-    width: 100%;
+    width: 304px;
+    height: 169px;
     gap: 24px;
     position: absolute;
     z-index: 1;
@@ -78,5 +96,21 @@ const CardPlaceholder = styled.div`
 
     & span:first-child {
         color: ${theme.color.accent};
+    }
+
+    & > div > div > div > span:last-child {
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+
+    @media screen and ${theme.media.largeTablet} {
+        width: 224px;
+        height: 137px;
+        padding: 12px;
+
+        & > div > div > div > span:first-child {
+            font-size: 14px;
+        }
     }
 `
