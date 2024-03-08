@@ -27,8 +27,8 @@ const StyledMain = styled.section`
 
         &:before {
             content: '';
-            width: 630px;
-            height: 460px;
+            width: clamp(${121}px, calc((100vw - 375px) / (1320 - 375) * (${630} - ${121}) + ${121}px), ${630}px);
+            height: clamp(${207}px, calc((100vw - 375px) / (1320 - 375) * (${460} - ${207}) + ${207}px), ${460}px);
             filter: blur(200px);
             background-color: ${theme.color.bgColorBlur};
             position: absolute;
@@ -39,20 +39,25 @@ const StyledMain = styled.section`
         
         &:after {
             content: '';
-            width: 352px;
-            height: 221px;
+            width: 352px; 
             filter: blur(100px);
             background-color: ${theme.color.bgColorBlur};
             position: absolute;
-            bottom: -70px;
-            right: -53px;
+            bottom: -70px; 
+            right: 0;
             z-index: -1;
         }
         
         @media screen and ${theme.media.tablet} {
-            &:after,
-            &:before {
+            &:after {
                 display: none;
+            }
+            
+            &:before {
+                left: 0;
+                top: auto;
+                bottom: 130px;
+                filter: blur(60px);
             }
         }
     }
