@@ -8,7 +8,7 @@ type BurgerButtonPropsType = {
 }
 
 type StyledBurgerButtonPropsType = {
-    isOpen: boolean
+    $isOpen: boolean
 }
 
 export const BurgerButton = ({isOpen, callback}: BurgerButtonPropsType) => {
@@ -16,7 +16,7 @@ export const BurgerButton = ({isOpen, callback}: BurgerButtonPropsType) => {
         callback();
     }
     return (
-        <StyledBurgerButton onClick={onClickButtonHandler} isOpen={isOpen}>
+        <StyledBurgerButton onClick={onClickButtonHandler} $isOpen={isOpen}>
                 <span></span>
         </StyledBurgerButton>
     );
@@ -34,7 +34,7 @@ const StyledBurgerButton = styled.button<StyledBurgerButtonPropsType>`
         background-color: ${theme.color.primaryFont};
         position: relative;
 
-        ${props => props.isOpen && css<StyledBurgerButtonPropsType>`
+        ${props => props.$isOpen && css<StyledBurgerButtonPropsType>`
             background-color: rgba(255, 255, 255, 0);
         `}
         &::before {
@@ -46,7 +46,7 @@ const StyledBurgerButton = styled.button<StyledBurgerButtonPropsType>`
             transform: translateY(-9px);
             right: 0;
 
-            ${props => props.isOpen && css<StyledBurgerButtonPropsType>`
+            ${props => props.$isOpen && css<StyledBurgerButtonPropsType>`
                 transform: translateY(0px) rotate(45deg);
             `}
         }
@@ -60,7 +60,7 @@ const StyledBurgerButton = styled.button<StyledBurgerButtonPropsType>`
             transform: translateY(9px);
             right: 0;
 
-            ${props => props.isOpen && css<StyledBurgerButtonPropsType>`
+            ${props => props.$isOpen && css<StyledBurgerButtonPropsType>`
                 transform: translateY(0px) rotate(-45deg);
             `}
         }

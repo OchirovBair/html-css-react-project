@@ -12,8 +12,8 @@ type MenuPropsType = {
 }
 
 type PopupMenuType = {
-    isOpen: boolean
-    callback?: ()=>void
+    $isOpen: boolean
+    // callback?: ()=>void
 }
 
 
@@ -21,7 +21,6 @@ export const BurgerMenu = (props: MenuPropsType) => {
     let [isOpen, setIsOpen] = useState(false);
 
     const getIsOpen = () => {
-        // debugger?
         setIsOpen(!isOpen)
     }
 
@@ -30,7 +29,7 @@ export const BurgerMenu = (props: MenuPropsType) => {
             <FlexWrapper $justify={'space-between'} $align={'center'}>
                 <Logo/>
                 <BurgerButton isOpen={isOpen} callback={getIsOpen}/>
-                <BurgerMenuPopup isOpen={isOpen}>
+                <BurgerMenuPopup $isOpen={isOpen}>
                     <ul>
                         {props.items.map((item, index) => {
                             return <ListItem key={index}><Link href={'#'}>{item}</Link></ListItem>
@@ -85,7 +84,7 @@ const BurgerMenuPopup = styled.div<PopupMenuType>`
     z-index: 9;
     background-color: ${theme.color.bgColor};
 
-    ${props => props.isOpen && css<PopupMenuType>`
+    ${props => props.$isOpen && css<PopupMenuType>`
         display: flex;
         justify-content: center;
         align-items: center;
