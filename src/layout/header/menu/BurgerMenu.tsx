@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import styled, {css} from "styled-components";
 import {FlexWrapper} from "../../../components/FlewWrapper";
 import {Link} from "../../../components/Link";
@@ -19,6 +19,27 @@ type PopupMenuType = {
 
 export const BurgerMenu = (props: MenuPropsType) => {
     let [isOpen, setIsOpen] = useState(false);
+
+    useEffect(() => {
+        // Функция, которая устанавливает overflow: hidden на теге body
+        const setOverflowHidden = () => {
+            document.body.style.overflow = 'hidden';
+        };
+
+        // Проверка переменной и установка обработчика событий
+        if (isOpen) {
+            setOverflowHidden();
+        }
+
+        // Функция для отписки от события и восстановления overflow
+        const cleanup = () => {
+            document.body.style.overflow = 'auto';
+        };
+
+        // Возвращаем функцию отписки от события
+        return cleanup;
+    }, [isOpen]);
+
 
     const getIsOpen = () => {
         setIsOpen(!isOpen)

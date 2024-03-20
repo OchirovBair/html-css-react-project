@@ -33,14 +33,19 @@ const StyledCard = styled.div`
     display: flex;
     flex-direction: column;
     max-width: 410px;
+    min-width: 343px;
     width: 100%;
     padding: 20px;
     border-top: 1px solid ${theme.color.accent};
     border-radius: 28px;
     background-color: ${theme.color.bgColor};
+    
+    @media screen and ${theme.media.largeTablet} {
+        padding: 16px;
+    }
 `
 const CardTitle = styled.h3`
-
+    font-size: clamp(${20}px, calc((100vw - 1200px) / (1320 - 1200) * (${24} - ${20}) + ${20}px), ${24}px);
 `
 
 const ExamplesFlexWrapper = styled(FlexWrapper)`

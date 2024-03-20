@@ -13,22 +13,22 @@ export const Create = () => {
     return (
         <StyledCreate>
             <Container>
-                <FlexWrapper $gap='48px' $align='center' $justify='space-between'>
+                <MainCreateSectionFlexWrapper $gap='48px' $align='center' $justify='space-between'>
                     <StyledCreateInfo>
-                        <FlexWrapper $direction='column' $justify='center' $align='flex-start'>
+                        <TextCreateSectionFlexWrapper $direction='column' $justify='center' $align='flex-start'>
                             <SectionTitle>Create And Sell Your <span>Best NFTs</span></SectionTitle>
                             <Text>Start exploring the world of digital art and NFTs today and take control of your digital assets with confidence!</Text>
                             <FlexWrapper $align='center' $gap='36px'>
                                 <Button>Create Now</Button>
                                 <Link>Learn More</Link>
                             </FlexWrapper>
-                        </FlexWrapper>
+                        </TextCreateSectionFlexWrapper>
                     </StyledCreateInfo>
                     <StyledExamplesImages>
                         <img src={img1} alt="example"/>
                         <img src={img2} alt="example"/>
                     </StyledExamplesImages>
-                </FlexWrapper>
+                </MainCreateSectionFlexWrapper>
             </Container>
         </StyledCreate>
     );
@@ -48,6 +48,26 @@ const StyledCreate = styled.section`
             bottom: -45px;
             right: 0;
             z-index: -1;
+        }
+    }
+    
+`
+
+const MainCreateSectionFlexWrapper = styled(FlexWrapper)`
+    @media screen and ${theme.media.tablet} {
+            flex-direction: column;
+    }
+`
+
+const TextCreateSectionFlexWrapper = styled(FlexWrapper)`
+    @media screen and ${theme.media.tablet} {
+        & > h2,
+        & > p {
+            text-align: center;
+        }
+        
+        & > div { 
+            align-self: center;
         }
     }
 `

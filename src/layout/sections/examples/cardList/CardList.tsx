@@ -2,6 +2,8 @@ import React from 'react';
 import styled from "styled-components";
 import {Card} from "./card/Card";
 import {data} from '../../../../data/data';
+import 'react-alice-carousel/lib/alice-carousel.css';
+import {theme} from "../../../../styles/Theme";
 
 
 export const CardList = () => {
@@ -17,7 +19,13 @@ export const CardList = () => {
 const StyledExamplesList = styled.div`
     display: flex;
     grid-area: 2/1/3/3;
-    gap: 30px;
-    //flex-wrap: wrap;
+    gap: 16px;
+    //justify-content: space-between;
     //overflow-x: auto;
+    //white-space: nowrap;
+    @media screen and ${theme.media.smallDesktop} {
+        grid-area: 2/1/3/2;
+        flex-direction: column;
+        align-items: center;
+    }
 `

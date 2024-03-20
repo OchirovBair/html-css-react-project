@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
 import {MenuList} from "./menuList/MenuList";
+import {theme} from "../../../styles/Theme";
 
 const exploreItems = {
     title: 'Explore',
@@ -41,4 +42,10 @@ const StyledMenu = styled.nav`
     max-width: 688px;
     width: 100%;
     
+    @media screen and ${theme.media.largeTablet} {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: auto;
+        
+    }
 `

@@ -4,6 +4,7 @@ import {Container} from "../../../components/Container";
 import {SectionTitle} from "../../../components/SectionTitle";
 import {Button} from "../../../components/Button";
 import {Dashboard} from "./dashboard/Dashboard";
+import {theme} from "../../../styles/Theme";
 
 
 export const PopularArtists = () => {
@@ -12,8 +13,8 @@ export const PopularArtists = () => {
             <Container>
                 <PopularArtistsGridWrapper>
                     <SectionTitle>Popular <span>Artists</span> On This Week</SectionTitle>
-                    <Button>See All</Button>
                     <Dashboard/>
+                    <Button>See All</Button>
                 </PopularArtistsGridWrapper>
             </Container>
         </StyledPopularArtists>
@@ -27,12 +28,22 @@ const PopularArtistsGridWrapper = styled.div`
     display: grid;
     grid-template-columns: minmax(auto, 307px) auto;
     grid-template-rows: auto auto;
-    //justify-content: space-between;
-    //align-items: center;
     grid-row-gap: 84px;
+    
 
     button {
         justify-self: end;
         align-self: center;
+    }
+    
+    @media screen and ${theme.media.smallDesktop} {
+        grid-template-columns: auto;
+        grid-auto-rows: auto;
+        justify-items: center;
+        grid-row-gap: 32px;
+        
+        & > button {
+            justify-self: center;
+        }
     }
 `

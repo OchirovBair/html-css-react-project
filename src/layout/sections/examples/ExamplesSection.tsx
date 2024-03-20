@@ -12,8 +12,8 @@ export const ExamplesSection = () => {
             <Container>
                 <ExamplesGridWrapper>
                     <SectionTitle><span>Amazing</span> and Super Unique Art of This <span>Week</span></SectionTitle>
-                    <Button>See All</Button>
                     <CardList/>
+                    <Button>See All</Button>
                 </ExamplesGridWrapper>
             </Container>
         </StyledExamples>
@@ -32,8 +32,14 @@ const StyledExamples = styled.section`
             background-color: ${theme.color.bgColorBlur};
             filter: blur(100px);
             bottom: -140px;
-            right: -130px;
+            right: 0;
             z-index: -1;
+
+            @media screen and ${theme.media.smallDesktop} {
+
+                    display: none;
+
+            }
         }
     }
 `
@@ -45,10 +51,27 @@ const ExamplesGridWrapper = styled.div`
     grid-template-rows: auto auto;
     //justify-content: space-between;
     grid-row-gap: 64px;
+    text-align: left;
 
     button {
         justify-self: end;
         align-self: center;
+    }
+    
+    @media screen and ${theme.media.smallDesktop} {
+        grid-template-columns: auto;
+        grid-auto-rows: auto;
+        grid-row-gap: 32px;
+
+        button {
+            justify-self: center;
+            align-self: center;
+        }
+        
+        h2 {
+            text-align: center;
+            
+        }
     }
 `
 

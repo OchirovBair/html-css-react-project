@@ -6,6 +6,7 @@ import {Container} from "../../components/Container";
 import {SocialLinks} from "./socialLinks/SocialLinks";
 import {Menu} from "./menu/Menu";
 import {Link} from "../../components/Link";
+import {theme} from "../../styles/Theme";
 
 export const Footer = () => {
     return (
@@ -35,7 +36,7 @@ export const Footer = () => {
 };
 
 const StyledFooter = styled.footer`
-    
+
 `
 
 const FooterText = styled.p`
@@ -55,6 +56,11 @@ const MenuFlexWrapper = styled(FlexWrapper)`
         max-width: 272px;
         width: 100%;
     }
+    
+    @media screen and ${theme.media.tablet} {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 `
 
 const CopryrigtFlexWrapper = styled(FlexWrapper)`
@@ -62,5 +68,10 @@ const CopryrigtFlexWrapper = styled(FlexWrapper)`
         font-size: 16px;
         font-weight: 400;
         line-height: 1.6;
+    }
+    
+    @media screen and ${theme.media.mobile} {
+        flex-direction: column;
+        gap: 16px;
     }
 `

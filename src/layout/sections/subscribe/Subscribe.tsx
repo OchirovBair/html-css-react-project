@@ -12,7 +12,7 @@ export const Subscribe = () => {
     return (
         <StyledSubscribe>
             <Container>
-                <FlexWrapper $gap='48px' $align='center' $justify='space-between'>
+                <SubscribeSectionWrapper>
                     <StyledSubscribeImages>
                         <img src={img1} alt="example"/>
                         <img src={img2} alt="example"/>
@@ -31,7 +31,7 @@ export const Subscribe = () => {
                             </FlexWrapper>
                         </FlexWrapper>
                     </StyledSubscribeInfo>
-                </FlexWrapper>
+                </SubscribeSectionWrapper>
             </Container>
         </StyledSubscribe>
     );
@@ -65,18 +65,54 @@ const StyledSubscribe = styled.section`
             left: 40px;
             z-index: -1;
         }
+        
+        @media screen and ${theme.media.mobile}{
+            &:before,
+            &:after {
+                display: none;
+            }
+        }
     }
 
 `
 
+const SubscribeSectionWrapper = styled.div`
+    display: flex;
+    gap: 48px;
+    align-items: center;
+    justify-content: space-between;
+    
+    @media screen and ${theme.media.tablet} {
+        display: grid;
+        grid-template-columns: minmax(343px, auto);
+        grid-auto-rows: auto;
+        justify-content: center;
+        
+        & > div:first-child {
+            grid-area: 2/1/3/2;
+        }
+        
+        & > div:last-child {
+            grid-area: 1/1/2/2;
+
+            & > div > p,
+            & > div > h2 {
+                text-align: center;
+            }
+        }
+        
+    }
+`
+
 const StyledSubscribeImages = styled.div`
     position: relative;
-    //height: 100%;
-    width: 100%;
+    height: clamp(${250}px, calc((100vw - 375px) / (1320 - 375) * (${458} - ${250}) + ${250}px), ${458}px);
+    //width: clamp(${343}px, calc((100vw - 375px) / (1320 - 375) * (${630} - ${343}) + ${343}px), ${630}px);
     max-width: 630px;
     min-width: 343px;
-    height: 458px;
-    min-height: 250px;
+    width: 100%;
+    //max-height: 458px;
+    //min-height: 250px;
 
     img:first-child {
         position: absolute;
@@ -91,6 +127,8 @@ const StyledSubscribeImages = styled.div`
         z-index: 1;
         right: 0;
         width: 45%;
+        
+        
     }
 `
 
@@ -114,6 +152,17 @@ const SubscribeForm = styled.form`
         right: 4px;
         top: 50%;
         transform: translateY(-50%);
+        display: flex;
+        justify-content: center;
+
+        
+        @media screen and ${theme.media.largeTablet} {
+            position: static;
+            right: auto;
+            top: auto;
+            transform: translateY(0);
+            margin-top: 20px;
+        }
     }
 `
 
